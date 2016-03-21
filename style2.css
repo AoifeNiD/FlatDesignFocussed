@@ -1,0 +1,243 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+@media screen and (min-width: 1300px) {
+
+/* General css */
+    body {
+
+        margin: -22px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        height: 800px;
+        width: 100%;
+        font-family: sans-serif;
+        background: floralwhite;
+    }
+    ul {
+        list-style-type: none;
+        text-align: left;
+    }
+    h1 {
+        width: 20%;
+        float: right;
+        margin-right: 2.5%;
+        color: white;
+    }
+    #dendronav {
+        background: -moz-linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96));
+        background: -webkit-linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96)); /* For Opera 11.1 to 12.0 */
+        background: linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96)); /* Standard syntax */
+        height: 26px;
+        margin: -22px 0px 0px -15px;
+        color: deepskyblue;
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+        padding: 3%;
+        position: fixed;
+    }
+    #dendronav h1{
+        width: 20%;
+        float: left;
+        margin-right: 2.5%;
+        color: white;
+    }
+    #dendronav button {
+        float: right;
+        width: 5%;
+        height: 40px;
+        text-decoration: none;
+        border-radius: 3px;
+        background-color: floralwhite;
+        color: rgb(0, 115, 153);
+        cursor: pointer;
+        padding: 5px;
+        margin-top: 1%;
+        margin-right: 70px;
+        border: 2px solid #ffc105;
+        font-size: .9em;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+    }
+    #dendronav button:hover {
+        color: #fff;
+        background-color: #ffc105;
+        border: 2px solid #fff;
+    }
+
+
+/* DENDRO CSS */
+
+    .node {
+        cursor: pointer;
+    }
+    /* RE-ADDITION -> 4 OF 4 FOR CIRCLE */
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1px;
+    }
+    .node text {
+        font: 12px sans-serif;
+    }
+    .link {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 2px;
+    }
+    svg{
+        margin-left: 110px;
+        margin-top: 150px;
+    }
+
+/* Pop up CSS */
+    div#popupContact {
+        position:absolute;
+        left:40%;
+        top:17%;
+        margin-left:-502px;
+        font-family:'Raleway',sans-serif;
+    }
+    iframe{
+        height: 600px;
+        width: 1200px;
+    }
+    #form {
+        max-width:1350px;
+        min-width:750px;
+        padding:10px;
+        border:2px solid gray;
+        border-radius:10px;
+        font-family: 'Raleway', sans-serif;
+        background-color:#fff
+    }
+    #form img{
+        float: right;
+        margin: 0;
+        height: 100px;
+        width:100px;
+    }
+    #abc{
+        display: none;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 1300px) {
+
+    /* General css */
+    body {
+
+        margin: -22px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        height: 100%;
+        width: 100%;
+        font-family: sans-serif;
+        background: floralwhite;
+    }
+    ul {
+        list-style-type: none;
+        text-align: left;
+    }
+    h1 {
+        width: 30%;
+        float: right;
+        margin-right: 2.5%;
+        color: white;
+    }
+    #dendronav {
+        background: -moz-linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96));
+        background: -webkit-linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96)); /* For Opera 11.1 to 12.0 */
+        background: linear-gradient(rgba(255,255,255,0.95),rgba(0,191,255, 0.96),rgba(0,115,153, 0.96)); /* Standard syntax */
+        height: 27px;
+        margin: -22px 0px 0px -15px;
+        color: deepskyblue;
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+        padding: 3%;
+        position: fixed;
+    }
+    #dendronav h1{
+        width: 30%;
+        float: left;
+        margin-right: 2.5%;
+        color: white;
+    }
+    #dendronav button {
+        float: right;
+        width: 10%;
+        height: 40px;
+        text-decoration: none;
+        border-radius: 3px;
+        background-color: floralwhite;
+        color: rgb(0, 115, 153);
+        cursor: pointer;
+        padding: 5px;
+        margin-top: 1%;
+        margin-right: 70px;
+        border: 2px solid #ffc105;
+        font-size: .9em;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+    }
+    #dendronav button:hover {
+        color: #fff;
+        background-color: #ffc105;
+        border: 2px solid #fff;
+    }
+
+
+    /* DENDRO CSS */
+
+    .node {
+        cursor: pointer;
+    }
+    /* RE-ADDITION -> 4 OF 4 FOR CIRCLE */
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1px;
+    }
+    .node text {
+        font: 12px sans-serif;
+    }
+    .link {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 2px;
+    }
+    svg{
+
+    }
+
+    /* Pop up CSS */
+    div#popupContact {
+        position:absolute;
+        left:50%;
+        top:11%;
+        margin-left:-502px;
+        font-family:'Raleway',sans-serif
+    }
+    iframe{
+        height: 440px;
+        width: 950px;
+    }
+    #form {
+        max-width:950px;
+        min-width:750px;
+        padding:10px;
+        border:2px solid gray;
+        border-radius:10px;
+        font-family: 'Raleway', sans-serif;
+        background-color:#fff
+    }
+    #form img{
+        float: right;
+        margin: 0;
+        height: 50px;
+        width:50px;
+    }
+    #abc{
+        display: none;
+    }
+}
